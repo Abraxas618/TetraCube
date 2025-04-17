@@ -1,13 +1,13 @@
 # TetraCube
 
-A CSE-Grade Post-Quantum Cryptographic Suite, Hardened for National Security Applications.
+A Post-Quantum Hardened Sovereign Cryptographic Suite, Designed for National Security Applications and Critical Infrastructure Protection.
 
 ---
 
 ## Overview
 
 TetraCube is an advanced cryptographic framework that combines Zero-Knowledge Proofs (ZKP), Post-Quantum Cryptographic (PQC) resilience, and Entropy-Enhanced Identity Systems.  
-It serves as a sovereign-grade foundation for decentralized trust infrastructure, built to withstand quantum adversaries and ensure data sovereignty across generations.
+It is architected to align with the operational principles expected by national cyber defense agencies, ensuring sovereign control over identity, communications, and governance in the post-quantum era.
 
 ---
 
@@ -56,76 +56,41 @@ Outputs:
 
 ---
 
-## Compliance Standards
+### ZK Circuit Pipeline
 
-✅ Zero-Knowledge Proof Compatible  
-✅ Post-Quantum Cryptography Ready  
-✅ DRDC and CSE Hardened  
-✅ Built for Sovereign Identity Infrastructure  
-✅ Entropy-Safe Credentialing  
-✅ SHA-512 + RTH Hybrid Entropy Layers
+Compile, generate, and verify circuits easily:
 
----
-
-## Licensing Overview
-
-TetraCube integrates several sovereign-grade projects into a hardened suite:
-
-### TetraCodex
-- **License**: Apache 2.0
-- **Description**:  
-  TetraCodex serves as the core foundation for TetraNexus, integrating multiple cryptographic protocols for sovereign, quantum-safe communication.  
-  It uses post-quantum cryptography and decentralized architectures to create a secure and resilient identity infrastructure.
-
-### TetraCrypt-PQC-Nexus
-- **License**: Apache 2.0
-- **Description**:  
-  A post-quantum encryption system based on hyperdimensional Platonic geometry. Includes:
-  - Tetrahedral Key Exchange
-  - Quantum Dodecahedral Encryption
-  - Recursive Tesseract Hashing (RTH)
-
-### TetraYggdrasil_Nexus
-- **License**: MIT
-- **Description**:  
-  Focused on post-quantum communication, zk-STARK Authentication, and WASM-Optimized P2P Mesh Networking. Enables decentralized, peer-to-peer, quantum-safe communications.
-
-### TetraCrypt_Yggdrasil_Unified
-- **License**: MIT
-- **Description**:  
-  A unified framework combining TetraCrypt-PQC-Nexus and TetraYggdrasil_Nexus, offering secure WASM mesh networking integrated with zk-STARK authentication.
-
-### TetraNexus
-- **License**: Apache 2.0
-- **Description**:  
-  A centralized sovereign quantum-safe network stack integrating zkSNARKs, Poseidon hashing, RTH, and QIDL (Quantum Platonic Identity Lattice).
-
-### TetraVote
-- **License**: MIT
-- **Description**:  
-  A tamper-proof voting system enabling Indigenous and sovereign nations to conduct elections with quantum-safe encryption and decentralized integrity.
+```bash
+python3 zk_pipeline.py
+```
 
 ---
 
-## How These Projects Connect
+### API Server Deployment
 
-- `TetraCodex` is the foundation that connects all components.
-- `TetraCrypt-PQC-Nexus` provides quantum-safe encryption methods embedded inside Codex and Nexus.
-- `TetraYggdrasil_Nexus` delivers the decentralized communication mesh utilized within Codex systems.
-- `TetraCrypt_Yggdrasil_Unified` upgrades the networking framework, bringing mesh resilience and zk-STARK authentication.
-- `TetraVote` leverages Codex's encryption and identity model to secure sovereign voting processes.
+Start the microservice API:
 
----
+```bash
+python3 CodexAPI.py
+```
 
-## Strategic Mission Statement
-
-TetraCube is engineered to reassert sovereign mathematical control in a post-quantum world.  
-It provides the building blocks for decentralized governance, critical infrastructure protection, and sovereign identity assurance.  
-It stands as a bulwark against centralized surveillance, quantum attacks, and geopolitical data hegemony.
+API Endpoints:
+- `POST /generate_credential`
+- `GET /generate_entropy`
 
 ---
 
-## SHA256 Fingerprint (DRDC-Proof Package)
+## Compliance Alignment
+
+- ✅ Zero-Knowledge Proof Compatible
+- ✅ Post-Quantum Cryptography Hardened
+- ✅ Sovereign Infrastructure Ready
+- ✅ Aligned with National Cybersecurity Principles
+- ✅ Suitable for Critical Governance Systems
+
+---
+
+## SHA256 Fingerprint (for Provenance)
 
 ```
 TetraCube_DRDC_Proof.tar.gz
@@ -134,16 +99,31 @@ SHA256: 6fc9525b06a8c5c636cfc431c1b8c3f88c058f538c7ae5573640e588fd5d3a1e
 
 ---
 
-## License Summary
+## Integrated Projects and Licensing
 
-- **TetraCube Core** (Apache 2.0)
-- **TetraCodex** (Apache 2.0)
-- **TetraCrypt-PQC-Nexus** (Apache 2.0)
-- **TetraNexus** (Apache 2.0)
-- **TetraYggdrasil_Nexus** (MIT)
-- **TetraCrypt_Yggdrasil_Unified** (MIT)
-- **TetraVote** (MIT)
+| Project | License | Purpose |
+|:--------|:--------|:--------|
+| TetraCodex | Apache 2.0 | Core quantum-safe credential and network architecture |
+| TetraCrypt-PQC-Nexus | Apache 2.0 | Hyperdimensional post-quantum encryption systems |
+| TetraNexus | Apache 2.0 | Centralized sovereign trust network stack |
+| TetraYggdrasil_Nexus | MIT | Quantum-safe decentralized P2P networking |
+| TetraCrypt_Yggdrasil_Unified | MIT | Unified WASM mesh + zk-STARK authentication |
+| TetraVote | MIT | Sovereign zero-knowledge voting platform |
 
-All components are modular, sovereign-permissive, and available for strategic national deployment.
+---
+
+## Strategic Mission Statement
+
+TetraCube reasserts the right of sovereign individuals, nations, and civilizations to control their cryptographic destiny beyond the reach of quantum adversaries.  
+It stands as a citadel for post-quantum communication, trust, and governance in an emerging multipolar digital world.
+
+---
+
+## Author and Sovereign Custodian
+
+**Michael Tass MacDonald**  
+Aliases: **Abraxas618**, **BaramayStation**
+
+All rights reserved under sovereign mathematics and sovereign cryptographic principles.
 
 ---
