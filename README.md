@@ -11,7 +11,7 @@ A Post-Quantum Hardened Sovereign Cryptographic Suite, Designed for National Sec
 
 [![ENTER THE TETRACUBE](https://img.shields.io/badge/ENTER_THE_TETRACUBE-00ff00?style=for-the-badge&logo=readthedocs&logoColor=black)](https://tetracube.readthedocs.io/en/latest/index.html)
 
-https://ipfs.io/ipfs/bafybeie4ppellxyiapcz35pkbb6lujjotvpfyqx6oj6m5khp5utcw67xiq
+https://ipfs.io/ipfs/bafybeifiejrshxv66owkhmmqir4kscnelvqom5uacokl2qf5etgrp23qa4
 
 🛡️ Sovereign Encryption • Quantum Network Protocols • Codex Biometric Trust
 
