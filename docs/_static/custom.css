@@ -1,41 +1,68 @@
-/* /docs/_static/custom.css (add this or extend existing one) */
+/* /docs/_static/custom.css (full true sovereign black patch) */
 
-body {
-    background-color: #0a0a0a; /* dark sovereign background */
-    color: #eeeeee; /* light grey text */
+html, body {
+    background-color: #000000 !important; /* true black */
+    color: #eeeeee !important; /* sovereign light grey */
 }
 
 .wy-nav-side {
-    background: #000000; /* sidebar full black */
+    background: #000000 !important; /* left sidebar */
 }
 
 .wy-side-nav-search {
-    background: #0f0f0f; /* darker search */
+    background: #000000 !important; /* search box */
+}
+
+.wy-side-scroll {
+    background: #000000 !important; /* full scroll panel */
 }
 
 .wy-menu-vertical a {
-    color: #00ff00; /* neon green links */
+    color: #00ff00 !important; /* neon green links */
 }
 
 .wy-menu-vertical a:hover {
-    background-color: #005500; /* darker green hover */
-}
-
-a {
-    color: #00ff00; /* neon sovereign links */
+    background-color: #005500 !important; /* dark green hover */
 }
 
 .wy-nav-content {
-    background-color: #000000; /* RIGHT MAIN CONTENT AREA FULL BLACK */
-    color: #eeeeee; /* ensure font remains visible */
+    background-color: #000000 !important; /* RIGHT CONTENT FULL BLACK */
+    color: #eeeeee !important;
+}
+
+.wy-table-responsive table td, .wy-table-responsive table th {
+    background: #000000 !important; /* tables */
 }
 
 .rst-content code {
-    background: #222222; /* dark grey for code backgrounds */
-    color: #00ff00; /* green code font for visibility */
+    background: #222222 !important; /* dark grey code background */
+    color: #00ff00 !important; /* green code font */
 }
 
 footer {
-    background-color: #000000; /* black footer too */
-    color: #eeeeee;
+    background: #000000 !important; /* footer */
+    color: #eeeeee !important;
+}
+
+/* Fix search suggestions popups */
+div#search-results {
+    background: #000000 !important;
+    color: #00ff00 !important;
+}
+
+/* Fix breadcrumb links */
+.rst-breadcrumbs {
+    background-color: #000000 !important;
+    color: #00ff00 !important;
+}
+
+/* Fix version switcher */
+.rst-versions {
+    background-color: #000000 !important;
+    color: #00ff00 !important;
+}
+
+/* Any other panels */
+div.wy-menu-vertical {
+    background: #000000 !important;
 }
