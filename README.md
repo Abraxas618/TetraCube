@@ -3,6 +3,18 @@
 A Post-Quantum Hardened Sovereign Cryptographic Suite, Designed for National Security Applications and Critical Infrastructure Protection.
 
 ---
+## 🚀 Sovereign Launch Announcement: TetraCube Codex Online
+
+> The Sovereign TetraCube Archive is now officially live.
+
+**Access the classified archive here:**
+
+[![ENTER THE TETRACUBE](https://img.shields.io/badge/ENTER_THE_TETRACUBE-00ff00?style=for-the-badge&logo=readthedocs&logoColor=black)](https://tetracube.readthedocs.io/en/latest/index.html)
+
+🛡️ Sovereign Encryption • Quantum Network Protocols • Codex Biometric Trust
+
+---
+
 
 ## Overview
 
