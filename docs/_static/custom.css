@@ -1,68 +1,124 @@
-/* /docs/_static/custom.css (full true sovereign black patch) */
+/* /docs/_static/custom.css (full true sovereign black patch, no hidden white) */
 
+/* Global reset for all elements to eliminate hidden white */
+* {
+    background-color: #000000 !important; /* true black for all */
+    color: #eeeeee !important; /* sovereign light grey for all text */
+}
+
+/* Specific overrides for HTML and body */
 html, body {
-    background-color: #000000 !important; /* true black */
-    color: #eeeeee !important; /* sovereign light grey */
+    background-color: #000000 !important;
+    color: #eeeeee !important;
 }
 
+/* Left sidebar */
 .wy-nav-side {
-    background: #000000 !important; /* left sidebar */
+    background: #000000 !important;
 }
 
-.wy-side-nav-search {
-    background: #000000 !important; /* search box */
+/* Search box */
+.wy-side-nav-search, .wy-side-nav-search input[type="text"] {
+    background: #000000 !important;
+    color: #00ff00 !important; /* neon green for search text */
+    border-color: #00ff00 !important; /* green border */
 }
 
+/* Scroll panel */
 .wy-side-scroll {
-    background: #000000 !important; /* full scroll panel */
+    background: #000000 !important;
 }
 
+/* Menu links */
 .wy-menu-vertical a {
     color: #00ff00 !important; /* neon green links */
+    background: #000000 !important;
 }
 
+/* Menu link hover */
 .wy-menu-vertical a:hover {
     background-color: #005500 !important; /* dark green hover */
+    color: #00ff00 !important;
 }
 
+/* Main content area */
 .wy-nav-content {
-    background-color: #000000 !important; /* RIGHT CONTENT FULL BLACK */
+    background-color: #000000 !important;
     color: #eeeeee !important;
 }
 
-.wy-table-responsive table td, .wy-table-responsive table th {
-    background: #000000 !important; /* tables */
+/* Tables */
+.wy-table-responsive table, .wy-table-responsive table td, .wy-table-responsive table th {
+    background: #000000 !important;
+    color: #eeeeee !important;
+    border-color: #00ff00 !important; /* green borders */
 }
 
-.rst-content code {
+/* Code blocks */
+.rst-content code, .rst-content pre.literal-block {
     background: #222222 !important; /* dark grey code background */
     color: #00ff00 !important; /* green code font */
+    border-color: #00ff00 !important;
 }
 
-footer {
-    background: #000000 !important; /* footer */
+/* Footer */
+footer, .wy-footer {
+    background: #000000 !important;
     color: #eeeeee !important;
 }
 
-/* Fix search suggestions popups */
-div#search-results {
+/* Search suggestions popups */
+div#search-results, div#search-results a {
     background: #000000 !important;
     color: #00ff00 !important;
 }
 
-/* Fix breadcrumb links */
-.rst-breadcrumbs {
+/* Breadcrumb links */
+.rst-breadcrumbs, .rst-breadcrumbs a {
     background-color: #000000 !important;
     color: #00ff00 !important;
 }
 
-/* Fix version switcher */
-.rst-versions {
+/* Version switcher */
+.rst-versions, .rst-versions a, .rst-versions .rst-current-version {
     background-color: #000000 !important;
     color: #00ff00 !important;
 }
 
-/* Any other panels */
+/* Vertical menu panel */
 div.wy-menu-vertical {
     background: #000000 !important;
+}
+
+/* Additional elements that might show white */
+.wy-nav-top, .wy-nav-top a, .wy-side-nav-search a, .rst-content a, .rst-content .admonition {
+    background: #000000 !important;
+    color: #00ff00 !important;
+    border-color: #00ff00 !important;
+}
+
+/* Hover for all links */
+a:hover {
+    background-color: #005500 !important; /* dark green hover */
+    color: #00ff00 !important;
+}
+
+/* Admonition boxes (notes, warnings, etc.) */
+.rst-content .admonition, .rst-content .admonition-title {
+    background: #222222 !important;
+    color: #eeeeee !important;
+    border-color: #00ff00 !important;
+}
+
+/* Dropdowns and popups */
+.wy-dropdown-menu, .wy-dropdown-menu a {
+    background: #000000 !important;
+    color: #00ff00 !important;
+}
+
+/* Ensure no white borders or outlines */
+input, button, select, textarea {
+    background: #000000 !important;
+    color: #00ff00 !important;
+    border-color: #00ff00 !important;
 }
