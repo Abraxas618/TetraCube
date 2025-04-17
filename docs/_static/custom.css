@@ -1,12 +1,12 @@
-/* /docs/_static/custom.css (full true sovereign black patch, no hidden white) */
+/* /docs/_static/custom.css (full true sovereign black patch, no hidden white, Sphinx >= 4.5, RTD theme, MyST, copybutton) */
 
-/* Global reset for all elements to eliminate hidden white */
+/* Global reset to eliminate hidden white */
 * {
     background-color: #000000 !important; /* true black for all */
     color: #eeeeee !important; /* sovereign light grey for all text */
 }
 
-/* Specific overrides for HTML and body */
+/* HTML and body */
 html, body {
     background-color: #000000 !important;
     color: #eeeeee !important;
@@ -21,7 +21,7 @@ html, body {
 .wy-side-nav-search, .wy-side-nav-search input[type="text"] {
     background: #000000 !important;
     color: #00ff00 !important; /* neon green for search text */
-    border-color: #00ff00 !important; /* green border */
+    border-color: #00ff00 !important;
 }
 
 /* Scroll panel */
@@ -51,11 +51,11 @@ html, body {
 .wy-table-responsive table, .wy-table-responsive table td, .wy-table-responsive table th {
     background: #000000 !important;
     color: #eeeeee !important;
-    border-color: #00ff00 !important; /* green borders */
+    border-color: #00ff00 !important;
 }
 
-/* Code blocks */
-.rst-content code, .rst-content pre.literal-block {
+/* Code blocks (reST and MyST Markdown) */
+.rst-content code, .rst-content pre.literal-block, .highlight, .highlight pre {
     background: #222222 !important; /* dark grey code background */
     color: #00ff00 !important; /* green code font */
     border-color: #00ff00 !important;
@@ -90,22 +90,25 @@ div.wy-menu-vertical {
     background: #000000 !important;
 }
 
-/* Additional elements that might show white */
-.wy-nav-top, .wy-nav-top a, .wy-side-nav-search a, .rst-content a, .rst-content .admonition {
+/* Top navigation and links */
+.wy-nav-top, .wy-nav-top a, .wy-side-nav-search a {
     background: #000000 !important;
     color: #00ff00 !important;
-    border-color: #00ff00 !important;
 }
 
-/* Hover for all links */
-a:hover {
+/* All links and hover states */
+a, .rst-content a {
+    color: #00ff00 !important;
+    background: #000000 !important;
+}
+a:hover, .rst-content a:hover {
     background-color: #005500 !important; /* dark green hover */
     color: #00ff00 !important;
 }
 
-/* Admonition boxes (notes, warnings, etc.) */
-.rst-content .admonition, .rst-content .admonition-title {
-    background: #222222 !important;
+/* Admonitions (notes, warnings, etc., including MyST styles) */
+.rst-content .admonition, .rst-content .admonition-title, .admonition.note, .admonition.warning, .admonition.danger, .admonition.attention {
+    background: #222222 !important; /* dark grey for admonitions */
     color: #eeeeee !important;
     border-color: #00ff00 !important;
 }
@@ -116,9 +119,51 @@ a:hover {
     color: #00ff00 !important;
 }
 
-/* Ensure no white borders or outlines */
+/* Form elements */
 input, button, select, textarea {
     background: #000000 !important;
     color: #00ff00 !important;
     border-color: #00ff00 !important;
+}
+
+/* Sphinx-copybutton specific styles */
+.copybtn {
+    background: #000000 !important;
+    color: #00ff00 !important;
+    border-color: #00ff00 !important;
+}
+.copybtn:hover {
+    background: #005500 !important;
+    color: #00ff00 !important;
+}
+
+/* MyST-parser specific styles (e.g., Markdown tables, code blocks) */
+.md-typeset table, .md-typeset th, .md-typeset td {
+    background: #000000 !important;
+    color: #eeeeee !important;
+    border-color: #00ff00 !important;
+}
+.md-typeset code, .md-typeset pre {
+    background: #222222 !important;
+    color: #00ff00 !important;
+    border-color: #00ff00 !important;
+}
+
+/* MyST admonitions and callouts */
+.md-typeset .admonition, .md-typeset .admonition-title {
+    background: #222222 !important;
+    color: #eeeeee !important;
+    border-color: #00ff00 !important;
+}
+
+/* Ensure no white in syntax highlighting */
+.highlight .hll, .highlight .c, .highlight .k, .highlight .o, .highlight .cm, .highlight .cp, .highlight .c1, .highlight .cs,
+.highlight .gd, .highlight .ge, .highlight .gr, .highlight .gh, .highlight .gi, .highlight .go, .highlight .gp, .highlight .gs,
+.highlight .gu, .highlight .gt, .highlight .kc, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kt,
+.highlight .m, .highlight .s, .highlight .n, .highlight .na, .highlight .nb, .highlight .nc, .highlight .no, .highlight .nd,
+.highlight .ni, .highlight .ne, .highlight .nf, .highlight .nl, .highlight .nn, .highlight .nt, .highlight .nv, .highlight .ow,
+.highlight .w, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo, .highlight .sb, .highlight .sc, .highlight .sd,
+.highlight .s2, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .sr, .highlight .s1, .highlight .ss {
+    background: #222222 !important;
+    color: #00ff00 !important;
 }
