@@ -1,15 +1,19 @@
-html_theme = "sphinx_book_theme"
+# Configuration file for the Sphinx documentation builder.
 
-html_theme_options = {
-    "path_to_docs": "docs/",
-    "repository_url": "https://github.com/Abraxas618/TetraCube",
-    "use_repository_button": True,
-    "use_edit_page_button": False,
-    "use_issues_button": False,
-    "use_download_button": True,
-    "extra_navbar": "",
-    "extra_footer": "",
-    "home_page_in_toc": True,
-    "show_navbar_depth": 2,
-    "default_mode": "dark",
-}
+project = 'TetraCube'
+author = 'Michael Tass MacDonald (Abraxas618 / BaramayStation)'
+release = '1.0.0'
+
+extensions = [
+    'myst_parser',
+    'sphinx_copybutton',
+]
+
+templates_path = ['_templates']
+exclude_patterns = []
+
+html_theme = 'sphinx_rtd_theme'
+html_static_path = ['_static']
+
+def setup(app):
+    app.add_css_file('custom.css')
