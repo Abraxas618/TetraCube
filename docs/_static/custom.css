@@ -1,34 +1,34 @@
-
-/* Sovereign TetraCube Custom Theme */
+/* /docs/_static/custom.css */
 
 body {
-    background-color: #000000;
-    color: #e0e0e0;
-}
-
-a {
-    color: #00FF00;
-}
-
-a:hover {
-    color: #00cc00;
-}
-
-.wy-side-nav-search {
-    background: #111111;
+    background-color: #0a0a0a; /* sovereign dark */
+    color: #eeeeee; /* readable light text */
 }
 
 .wy-nav-side {
-    background: #111111;
+    background: #000000; /* black sidebar */
+}
+
+.wy-side-nav-search {
+    background: #0f0f0f; /* dark search area */
+}
+
+.wy-menu-vertical a {
+    color: #00ff00; /* sovereign neon green links */
+}
+
+.wy-menu-vertical a:hover {
+    background-color: #005500; /* dark green on hover */
+}
+
+a {
+    color: #00ff00; /* neon green for all links */
 }
 
 .rst-content code {
-    background: #222222;
-    color: #00FF00;
+    background: #222222; /* dark grey for code blocks */
 }
 
-pre {
-    background-color: #111111;
-    border: 1px solid #00FF00;
-    color: #00FF00;
+.wy-nav-content {
+    background: #0a0a0a; /* content background matching body */
 }
