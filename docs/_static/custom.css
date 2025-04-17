@@ -1,34 +1,41 @@
-/* /docs/_static/custom.css */
+/* /docs/_static/custom.css (add this or extend existing one) */
 
 body {
-    background-color: #0a0a0a; /* sovereign dark */
-    color: #eeeeee; /* readable light text */
+    background-color: #0a0a0a; /* dark sovereign background */
+    color: #eeeeee; /* light grey text */
 }
 
 .wy-nav-side {
-    background: #000000; /* black sidebar */
+    background: #000000; /* sidebar full black */
 }
 
 .wy-side-nav-search {
-    background: #0f0f0f; /* dark search area */
+    background: #0f0f0f; /* darker search */
 }
 
 .wy-menu-vertical a {
-    color: #00ff00; /* sovereign neon green links */
+    color: #00ff00; /* neon green links */
 }
 
 .wy-menu-vertical a:hover {
-    background-color: #005500; /* dark green on hover */
+    background-color: #005500; /* darker green hover */
 }
 
 a {
-    color: #00ff00; /* neon green for all links */
-}
-
-.rst-content code {
-    background: #222222; /* dark grey for code blocks */
+    color: #00ff00; /* neon sovereign links */
 }
 
 .wy-nav-content {
-    background: #0a0a0a; /* content background matching body */
+    background-color: #000000; /* RIGHT MAIN CONTENT AREA FULL BLACK */
+    color: #eeeeee; /* ensure font remains visible */
+}
+
+.rst-content code {
+    background: #222222; /* dark grey for code backgrounds */
+    color: #00ff00; /* green code font for visibility */
+}
+
+footer {
+    background-color: #000000; /* black footer too */
+    color: #eeeeee;
 }
